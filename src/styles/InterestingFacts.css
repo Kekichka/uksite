@@ -1,0 +1,36 @@
+.interesting-facts-page {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .main-content h1{
+    flex: 1;
+    padding: 20px;
+    margin-right: -400px;
+  }
+  
+  .did-you-know {
+    font-size: 28px; 
+    margin: 20px 0; 
+  }
+  
+  .facts-section {
+    text-align: left; 
+    margin-top: 20px; 
+    margin-left: 280px;
+  }
+  
+  .author-facts-title {
+    font-size: 24px;
+    margin: 10px 0; 
+  }
+  
+  .facts-list {
+    list-style-type: disc; 
+    margin-left: 20px; 
+    font-size: 16px; 
+  }

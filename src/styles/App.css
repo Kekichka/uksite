@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f7f4ed;
 }
 
 .App-logo {
@@ -35,4 +36,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+.App {
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f4ed;
+  margin: 0; 
+  padding: 0; 
 }
