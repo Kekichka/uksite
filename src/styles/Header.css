@@ -1,32 +1,80 @@
 .header {
     background-color: #293b2c;
-    padding: 20px; 
-    height: 120px; 
-    background-size: contain; 
-    background-position: center; 
+    padding: 20px;
+    height: 120px;
+    background-size: contain;
+    background-position: center;
     display: flex;
     align-items: center;
 }
-  
+
 .header nav ul {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin: 0; 
-    padding: 0; 
-    margin-left: 320px;
+    margin: 0;
+    padding: 0;
+    margin-left: 200px;
 }
-  
+
 .header nav ul li {
-    display: inline;
+    position: relative; /* Enable positioning for dropdown */
     margin-left: 100px;
 }
-  
+
 .header nav ul li a {
-    color: #f7f4ed;;
+    color: #f7f4ed;
     text-decoration: none;
     padding: 10px;
-    font-weight:bold;
+    font-weight: bold;
     font-size: 20px;
+    transition: color 0.3s ease;
 }
-  
+
+.header nav ul li a:hover {
+    color: #c5e1a5; /* Subtle hover color change */
+}
+
+.header nav ul li .dropdown-menu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: calc(100% + 5px); /* Add spacing below the parent item */
+    right: 0;
+    background-color: #2e442f; /* Match dropdown background to header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 10;
+    transform: translateY(-10px); /* Start slightly above */
+    transition: all 0.3s ease; /* Smooth transition for visibility and transform */
+}
+
+.header nav ul li .dropdown-menu li {
+    margin: 0;
+    padding: 5px 20px;
+}
+
+.header nav ul li .dropdown-menu li a {
+    color: #f7f4ed;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header nav ul li .dropdown-menu li a:hover {
+    background-color: #3b5239;
+    color: #c5e1a5;
+}
+
+/* Show dropdown on hover */
+.header nav ul li:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Settle into position */
+}

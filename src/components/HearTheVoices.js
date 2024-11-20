@@ -5,7 +5,6 @@ import '../styles/HearTheVoices.css';
 const HearTheVoices = () => {
   return (
     <div className="hear-the-voices-page">
-      <Sidebar />
       <div className="main-content">
         <h1>Hear the Voices of Ukrainian Authors</h1>
         <p>Listen to recordings of Ukrainian authors reading their works.</p>

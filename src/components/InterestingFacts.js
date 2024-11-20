@@ -5,7 +5,6 @@ import '../styles/InterestingFacts.css';
 const InterestingFacts = () => {
   return (
     <div className="interesting-facts-page">
-      <Sidebar />
       <div className="main-content">
         <h1>А ви знали таку цікавинку??????</h1>
         <div className="facts-section">
