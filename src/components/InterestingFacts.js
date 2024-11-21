@@ -1,68 +1,89 @@
-import React from 'react';
-import '../styles/InterestingFacts.css';
+import React, { useState } from "react";
+import "../styles/InterestingFacts.css";
 
+// Sample authors and their facts
 const authors = [
-  { id: 1, name: 'Шевченко', facts: [
-    'Шевченко був пророком для своєї нації: У своїх віршах Шевченко передбачав багато подій, що сталися в Україні після його смерті. Він часто звертався до теми національної незалежності та боротьби за права українців, що стало актуальним вже через багато років після його загибелі.',
-    'Історія з його автопортретом: Шевченко зробив автопортрет у 1840-х роках, і він вважається однією з найкращих його робіт. Цей автопортрет Шевченко малював на замовлення одного з його друзів. Інтригуюче те, що він зобразив себе без бороди, хоча в реальному житті носив її майже завжди.',
-    '"Заповіт" — символ боротьби: Вірш "Заповіт" став справжнім гімном української національної свідомості. І хоча Шевченко писав його наприкінці свого життя, його слова «І славу, і волю» стали основою для революційних рухів в Україні.',
-    'Шевченко і Петербург: Під час свого перебування в Санкт-Петербурзі Шевченко неодноразово ставав обєктом уваги як з боку аристократів, так і з боку простого люду. Однак, попри славу і підтримку художників, він часто відчував себе чужим в цьому оточенні через своє походження.'
-  ] },
-  { id: 2, name: 'Франко', facts: [
-    'She was the first woman to win a Nobel Prize.',
-    'She discovered radium and polonium.',
-    'She founded the Curie Institute in Paris.'
-  ] },
-  { id: 3, name: 'Леся Українка', facts: [
-    'He formulated the laws of motion and universal gravitation.',
-    'He invented the reflecting telescope.',
-    'He was a key figure in the scientific revolution.'
-  ] },
-  { id: 4, name: 'Хвильовий', facts: [
-    'He developed the modern alternating current (AC) electricity supply system.',
-    'He was known for his eccentric personality.',
-    'He had over 300 patents for his inventions.'
-  ] }
+  {
+    name: "Тарас Шевченко",
+    facts: [
+      "Taras Shevchenko was born in 1814 in Ukraine.",
+      "Shevchenko was not only a poet but also an artist.",
+      "His work played a major role in shaping modern Ukrainian literature."
+    ]
+  },
+  {
+    name: "Іван Франко",
+    facts: [
+      "Ivan Franko was a famous Ukrainian poet and writer, born in 1856.",
+      "He was also a political activist and public figure.",
+      "Franko is regarded as one of the most influential Ukrainian writers of the 19th century."
+    ]
+  },
+  {
+    name: "Леся Українка",
+    facts: [
+      "Lesya Ukrainka was a famous Ukrainian poet and playwright, born in 1871.",
+      "She was a key figure in the development of modern Ukrainian literature.",
+      "Her works reflect themes of national identity and struggle for freedom."
+    ]
+  }
 ];
 
-const AuthorFacts = () => {
+function App() {
+  const [selectedAuthor, setSelectedAuthor] = useState(null);
+  const [currentFactIndex, setCurrentFactIndex] = useState(0);
+
+  const handleAuthorClick = (author) => {
+    setSelectedAuthor(author);
+    setCurrentFactIndex(0); // Reset the fact index when a new author is selected
+  };
+
+  const nextFact = () => {
+    setCurrentFactIndex((prevIndex) =>
+      prevIndex < selectedAuthor.facts.length - 1 ? prevIndex + 1 : 0
+    );
+  };
+
+  const prevFact = () => {
+    setCurrentFactIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : selectedAuthor.facts.length - 1
+    );
+  };
+
   return (
-    <div className="author-facts">
-      <h1>Learn Interesting Facts About Authors</h1>
-
-      <div className="author-list">
-        {authors.map((author) => (
-          <div
-            key={author.id}
-            className="author-item"
-            onClick={() => {
-              const authorElement = document.getElementById(`author-${author.id}`);
-              authorElement.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
-            <h2>{author.name}</h2>
-          </div>
-        ))}
+    <div className="container">
+      <div className="authors-list">
+        <h2>Автори</h2>
+        <ul>
+          {authors.map((author) => (
+            <li
+              key={author.name}
+              onClick={() => handleAuthorClick(author)}
+              className={selectedAuthor === author ? "active" : ""}
+            >
+              {author.name}
+            </li>
+          ))}
+        </ul>
       </div>
-
-      <div className="author-details">
-        {authors.map((author) => (
-          <div
-            key={author.id}
-            id={`author-${author.id}`}
-            className="author-detail"
-          >
-            <h2>Facts about {author.name}:</h2>
-            <ul className="facts-list">
-              {author.facts.map((fact, index) => (
-                <li key={index}>{fact}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="facts">
+        {selectedAuthor ? (
+          <>
+            <h3>{selectedAuthor.name}</h3>
+            <div className="fact">
+              <p>{selectedAuthor.facts[currentFactIndex]}</p>
+            </div>
+            <div className="arrows">
+              <button onClick={prevFact}>&lt;</button>
+              <button onClick={nextFact}>&gt;</button>
+            </div>
+          </>
+        ) : (
+          <h1>Оберіть автора щоб побачити факти</h1>
+        )}
       </div>
     </div>
   );
-};
+}
 
-export default AuthorFacts;
+export default App;
