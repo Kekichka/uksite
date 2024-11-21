@@ -11,7 +11,7 @@
 }
 
 .author-container h1 {
-  margin-left: -900px;
+  margin-left: -890px;
 }
 
 .author-content {
@@ -84,4 +84,36 @@
 
 .action-text:hover {
   text-decoration: underline;
+}
+
+/* Initial state for all content */
+.author-container, .author-text, .author-text2, .author-photo {
+  opacity: 0;
+  transform: translateY(-50px); /* Start above the original position */
+  animation: dropdown 0.5s ease-out forwards; /* Apply the dropdown animation */
+}
+
+/* Apply delays for each section to create a staggered effect */
+.author-text2 {
+  animation-delay: 0s; /* Delay for the second text section */
+}
+
+.author-photo {
+  animation-delay: 0s; /* Delay for the photo */
+}
+
+.author-actions {
+  animation-delay: 0.7s; /* Delay for actions */
+}
+
+/* Dropdown animation keyframes */
+@keyframes dropdown {
+  0% {
+    transform: translateY(-50px); /* Start above */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* End at normal position */
+    opacity: 1; /* Fade in */
+  }
 }
