@@ -1,43 +1,77 @@
-/* Content for the first author */
-.content1 {
+.author-container {
   display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; /* Aligns the image on the left */
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  margin-top: 60px;
 }
 
-.author-image1 {
+.author-container h1 {
+  margin-left: -1000px;
+}
+
+.author-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.author-text {
+  max-width: 900px;
+  text-align: left;
+}
+
+.author-text2 {
+  max-width: 1100px;
+  text-align: left;
+}
+
+.author-text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.author-text2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.author-photo {
   width: 200px;
   height: auto;
-  margin-left: 20px;
+  border-radius: 5px;
+}
+
+.author-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
+  margin-left: -1000px;
+
 }
 
-.author-info1 p {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-left: 90px; /* Moves the text to the right of the image */
+.action-text1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+  cursor: pointer;
 }
 
-/* Content for the second author */
-.content2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-end; /* Aligns the image on the right */
+.action-text2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0;
+  margin-left: 50px;
+  cursor: pointer;
+
 }
 
-.author-image2 {
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-}
-
-.author-info2 {
-  font-size: 16px;
-  line-height: 1.5;
-  margin-right: 30px; /* Moves the text to the left of the image */
-  margin-left: 0px;
-}
-
-.author-info2 p {
-  margin-bottom: 0; /* Remove extra space below the paragraph */
+.action-text:hover {
+  text-decoration: underline;
 }

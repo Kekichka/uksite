@@ -1,0 +1,85 @@
+.test-chooser {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 220px;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 50px;
+  }
+  
+  .test-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 70px;
+  }
+  
+  .test-item {
+    background-color: #293b2c;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  .test-item h2 {
+    color: #f9f9f9;
+  }
+  
+  .test-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Modal styling */
+  .test-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .test-modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .question {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background-color: #293b2c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #444;
+  }
+  
+  .test-result {
+    margin-top: 20px;
+    font-size: 16px;
+    color: green;
+  }
+  

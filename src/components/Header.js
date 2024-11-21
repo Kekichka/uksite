@@ -7,17 +7,17 @@ const Header = () => {
     <div className="header">
       <nav>
         <ul>
-          <li><Link to="/">Home</Link></li>
+          <li><Link to="/">Головна</Link></li>
           <li className="dropdown">
-            <Link to="/about-authors">About Authors</Link>
+            <Link to="/about-authors">Біографії</Link>
             <ul className="dropdown-menu">
-              <li><Link to="/about-authors/author1">Author 1</Link></li>
-              <li><Link to="/about-authors/author2">Author 2</Link></li>
-              <li><Link to="/about-authors/author3">Author 3</Link></li>
+              <li><Link to="/about-authors/author1">Тарас Шевченко</Link></li>
+              <li><Link to="/about-authors/author2">Леся Українка</Link></li>
+              <li><Link to="/about-authors/author3">Іван Франко</Link></li>
             </ul>
           </li>
-          <li><Link to="/interesting-facts">Interesting Facts</Link></li>
-          <li><Link to="/hear-the-voices">Hear the Voices</Link></li>
+          <li><Link to="/interesting-facts">Цікаві факти</Link></li>
+          <li><Link to="/tests">Тести</Link></li>
         </ul>
       </nav>
     </div>

@@ -14,12 +14,12 @@
     justify-content: space-around;
     margin: 0;
     padding: 0;
-    margin-left: 200px;
+    margin-left: 150px;
 }
 
 .header nav ul li {
     position: relative; /* Enable positioning for dropdown */
-    margin-left: 100px;
+    margin-left: 150px;
 }
 
 .header nav ul li a {

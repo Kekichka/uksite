@@ -1,36 +1,69 @@
-.interesting-facts-page {
-    display: flex;
-  }
-  
-  .main-content {
-    flex: 1;
-    padding: 20px;
-  }
+.author-facts {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  .main-content h1{
-    flex: 1;
-    padding: 20px;
-    margin-right: -400px;
-  }
-  
-  .did-you-know {
-    font-size: 28px; 
-    margin: 20px 0; 
-  }
-  
-  .facts-section {
-    text-align: left; 
-    margin-top: 20px; 
-    margin-left: 280px;
-  }
-  
-  .author-facts-title {
-    font-size: 24px;
-    margin: 10px 0; 
-  }
-  
-  .facts-list {
-    list-style-type: disc; 
-    margin-left: 20px; 
-    font-size: 16px; 
-  }
+h2{
+  color: rgb(254, 254, 251);
+}
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 40px;
+}
+
+.author-list {
+  width: 200px;
+  top: 20px; /* Set it 20px from the top of the viewport */
+  left: 20px; /* Set it 20px from the left side */
+  height: 420px; /* Make the list take up the full height of the viewport, minus padding */
+  padding-right: 20px;
+  overflow-y: auto; /* Allow the list to scroll if needed */
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.author-item {
+  background-color: #293b2c;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.author-item:hover {
+  transform: scale(1.05);
+}
+
+.author-details {
+  margin-left: 240px; /* Add a margin to the left to account for the fixed list */
+  padding-top: 20px;
+  width: 80% ; /* Take the rest of the width minus the space for the list */
+}
+
+.author-detail {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.author-detail li{
+  width: 900px;
+}
+.author-detail h2 {
+  color: #293b2c;
+  margin-right: 810px;
+}
+
+.facts-list {
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-right: 510px;
+}

@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import AboutAuthors from './components/AboutAuthors';
 import InterestingFacts from './components/InterestingFacts';
-import HearTheVoices from './components/HearTheVoices';
+import TestChooser from './components/TestChooser';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about-authors" element={<AboutAuthors />} />
           <Route path="/interesting-facts" element={<InterestingFacts />} />
-          <Route path="/hear-the-voices" element={<HearTheVoices />} />
+          <Route path="/tests" element={<TestChooser />} />
         </Routes>
       </div>
   );
