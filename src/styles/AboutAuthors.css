@@ -7,11 +7,12 @@
   text-align: center;
   padding: 10px;
   margin-top: 60px;
-  margin-bottom: 70px;
+ 
 }
 
 .author-container h1 {
   margin-left: -890px;
+  color: #293b2c;
 }
 
 .author-content {
@@ -33,12 +34,12 @@
 }
 
 .author-text p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
 .author-text2 p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
 }
 
@@ -56,11 +57,19 @@
   margin-left: -1000px;
 }
 
+
+.action-text {
+  font-size: 20px;
+  color: #37633f;
+}
+
 .action-text1 {
   font-size: 18px;
   font-weight: bold;
   margin: 5px 0;
   cursor: pointer;
+  color: #37633f;
+  font-weight: bolder;
 }
 
 .action-text2 {
@@ -69,7 +78,8 @@
   margin: 5px 0;
   margin-left: 115px;
   cursor: pointer;
-
+  color: #37633f;
+  font-weight: bolder;
 }
 
 .action-text3 {
@@ -78,7 +88,8 @@
   margin: 5px 0;
   margin-left: -13px;
   cursor: pointer;
-
+  color: #37633f;
+  font-weight: bolder;
 }
 
 
