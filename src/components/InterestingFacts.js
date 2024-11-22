@@ -1,30 +1,62 @@
 import React, { useState } from "react";
 import "../styles/InterestingFacts.css";
 
-// Sample authors and their facts
 const authors = [
   {
     name: "Тарас Шевченко",
     facts: [
-      "Taras Shevchenko was born in 1814 in Ukraine.",
-      "Shevchenko was not only a poet but also an artist.",
-      "His work played a major role in shaping modern Ukrainian literature."
+      " Тарас Шевченко народився в кріпацтві." ,
+"Викуплений з неволі за 2,500 рублів завдяки зусиллям друзів.",  
+"Малював картини й отримав звання академіка гравюри.",  
+"Написав Кобзар, який став символом української літератури." , 
+"Був засланий до солдатчини за антирежимні вірші.  "
     ]
   },
   {
     name: "Іван Франко",
     facts: [
-      "Ivan Franko was a famous Ukrainian poet and writer, born in 1856.",
-      "He was also a political activist and public figure.",
-      "Franko is regarded as one of the most influential Ukrainian writers of the 19th century."
+      " Іван Франко володів 14 мовами." , 
+      "Його називають українським Каменярем за однойменний вірш." , 
+      'Франко тричі балотувався до австрійського парламенту.'  ,
+      'Написав понад 6 тисяч творів різних жанрів.' ,
+    'Пережив кілька арештів за свою політичну діяльність. '
     ]
   },
   {
     name: "Леся Українка",
     facts: [
-      "Lesya Ukrainka was a famous Ukrainian poet and playwright, born in 1871.",
-      "She was a key figure in the development of modern Ukrainian literature.",
-      "Her works reflect themes of national identity and struggle for freedom."
+      "Лесю називали єдиним чоловіком у українській літературі за її незламний дух.",
+"У дитинстві вона власноруч видала першу збірку віршів для родичів, назвавши її Квіти",  
+'Створила власний підручник для брата з історії стародавнього світу.',  
+'Вона грала на фортепіано, поки хвороба не змусила покинути музику.',  
+'Її коханий Сергій Мержинський помер у неї на руках, і тоді вона написала драму "Одержима" за одну ніч.'
+    ]
+  },{
+    name: "Ліна Костенко",
+    facts: [
+      "Ліна Костенко відмовилася від звання Героя України, заявивши: «Політичної біжутерії не ношу.»",
+"Її роман «Маруся Чурай» називають «поетичною енциклопедією українського життя XVII століття».",
+"Вона єдина жінка-шістдесятниця, яка пережила сувору цензуру, але залишилася вірною своїм принципам.",
+"Костенко довго мовчала в літературі — 15 років її твори не публікували.",
+"У 2010 році Ліна здійснила подорож Чорнобильською зоною і написала про це книгу «Записки українського самашедшого»."
+    ]
+  },{
+    name: "Микола Хвильовий",
+    facts: [
+      "Микола Хвильовий був одним із засновників літературної організації «ВАПЛІТЕ»." , 
+"Він популяризував ідею «психологічної Європи» для української культури."  ,
+"Хвильовий написав маніфест «Геть від Москви!», закликаючи до культурної незалежності."  ,
+"Був підданий постійній критиці та переслідуванню радянською владою."  ,
+"У 1933 році покінчив із життям, протестуючи проти репресій і Голодомору."  
+    ]
+  },{
+    name: "Василь Стус",
+    facts: [
+      "Василь Стус був одним із найвідоміших дисидентів радянської України.",  
+"За свої переконання та творчість його двічі ув’язнювали."  ,
+"У таборах Стус написав більшість своїх поетичних шедеврів." , 
+"Його збірки «Палімпсести» та «Зимові дерева» стали символами незламного духу." , 
+"Помер у таборі в 1985 році, ставши символом боротьби за свободу України."  
     ]
   }
 ];
@@ -33,9 +65,10 @@ function App() {
   const [selectedAuthor, setSelectedAuthor] = useState(null);
   const [currentFactIndex, setCurrentFactIndex] = useState(0);
 
+
   const handleAuthorClick = (author) => {
     setSelectedAuthor(author);
-    setCurrentFactIndex(0); // Reset the fact index when a new author is selected
+    setCurrentFactIndex(0);
   };
 
   const nextFact = () => {
@@ -59,7 +92,7 @@ function App() {
             <li
               key={author.name}
               onClick={() => handleAuthorClick(author)}
-              className={selectedAuthor === author ? "active" : ""}
+              className={selectedAuthor === author ? 'active' : ''}
             >
               {author.name}
             </li>
@@ -70,8 +103,12 @@ function App() {
         {selectedAuthor ? (
           <>
             <h3>{selectedAuthor.name}</h3>
-            <div className="fact">
-              <p>{selectedAuthor.facts[currentFactIndex]}</p>
+            <div className="facts-inner" style={{ transform: `translateX(-${currentFactIndex * 100}%)` }}>
+              {selectedAuthor.facts.map((fact, index) => (
+                <div key={index} className="fact">
+                  <p>{fact}</p>
+                </div>
+              ))}
             </div>
             <div className="arrows">
               <button onClick={prevFact}>&lt;</button>
