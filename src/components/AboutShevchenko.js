@@ -6,7 +6,7 @@ const AboutShevchenko = () => {
     <>
       <div className="author-container">
         <h1>Тарас Шевченко</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '0px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '0px'}}></div>
         <div className="author-content">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Taras_Shevchenko_selfportrait_oil_1840-2.jpg/248px-Taras_Shevchenko_selfportrait_oil_1840-2.jpg" // Replace with actual image

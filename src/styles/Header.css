@@ -1,5 +1,5 @@
 .header {
-    background-color: #293b2c;
+    background-color: #2b3538;
     padding: 20px;
     height: 120px;
     background-size: contain;
@@ -32,7 +32,7 @@
 }
 
 .header nav ul li a:hover {
-    color: #c5e1a5; /* Subtle hover color change */
+    color: #93939c; /* Subtle hover color change */
 }
 
 .header nav ul li .dropdown-menu {
@@ -42,7 +42,7 @@
     position: absolute;
     top: calc(100% + 5px); /* Add spacing below the parent item */
     right: 0;
-    background-color: #2e442f; /* Match dropdown background to header */
+    background-color: #2b3538; /* Match dropdown background to header */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 10px 0;
@@ -68,8 +68,8 @@
 }
 
 .header nav ul li .dropdown-menu li a:hover {
-    background-color: #3b5239;
-    color: #c5e1a5;
+    background-color: #2b3538;
+    color: #485b61;
 }
 
 /* Show dropdown on hover */

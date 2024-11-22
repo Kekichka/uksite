@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f2eee4;
+  background-color:#e9e9e7;
 }
 
 .container {
@@ -37,18 +37,18 @@ body {
   border: 1px solid #ccc;
   margin-bottom: 5px;
   transition: background-color 0.3s;
-  background-color: #293b2c;
+  background-color: #2b3538;
   color: #f2eee4;
   
 }
 
 .authors-list li:hover {
-  background-color: #597d5f;
+  background-color: #485b61;
   color: #f2eee4;
 }
 
 .authors-list li.active {
-  background-color: #597d5f;
+  background-color: #485b61;
   font-weight: bold;
 }
 
@@ -84,17 +84,18 @@ body {
   gap: 10px;
 }
 
+
 button {
   padding: 10px;
   font-size: 18px;
   cursor: pointer;
   border: none;
-  background-color: #293b2c;
+  background-color: #2b3538;
   color: white;
   border-radius: 5px;
   width: 50px;
 }
 
 button:hover {
-  background-color: #293b2c;
+  background-color: #2b3538;
 }

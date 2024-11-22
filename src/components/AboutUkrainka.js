@@ -6,7 +6,7 @@ const AboutUkrainka = () => {
     <>
       <div className="author-container">
         <h1>Леся Українка</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '20px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '20px'}}></div>
         <div className="author-content">
           
           <div className="author-text">

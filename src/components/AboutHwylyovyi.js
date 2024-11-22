@@ -6,7 +6,7 @@ const AboutHwylyovyi = () => {
     <>
       <div className="author-container">
         <h1>Микола Хвильовий</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '0px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '0px'}}></div>
         <div className="author-content">
           <img
             src="https://uinp.gov.ua/storage/app/public/uploads/2018-12-20/10/Rqj1545303563ESY.jpeg" // Replace with actual image

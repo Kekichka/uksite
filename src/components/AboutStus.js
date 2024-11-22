@@ -6,7 +6,7 @@ const AboutStus = () => {
     <>
       <div className="author-container">
         <h1>Василь Стус</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '0px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '0px'}}></div>
         <div className="author-content">
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_sy5K2KmSIeEiDWQZhu0CjvXKMQifSTfpiQ&s" // Replace with actual image

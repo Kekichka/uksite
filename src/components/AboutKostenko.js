@@ -6,7 +6,7 @@ const AboutKostenko = () => {
     <>
       <div className="author-container">
         <h1>Ліна Костенко</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '0px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '0px'}}></div>
         <div className="author-content">
           <img
             src="https://esu.com.ua/images/article_images/K/Kostenko%20Lina%20Vasilivna.jpg" // Replace with actual image

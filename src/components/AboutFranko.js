@@ -6,7 +6,7 @@ const AboutFranko = () => {
     <>
       <div className="author-container">
         <h1>Іван Франко</h1>
-        <div style={{ width: '80%', height: '5px', backgroundColor: '#37633f', marginLeft: '0px'}}></div>
+        <div style={{ width: '80%', height: '5px', backgroundColor: '#2b3538', marginLeft: '0px'}}></div>
         <div className="author-content">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/%D0%86%D0%B2%D0%B0%D0%BD_%D0%AF%D0%BA%D0%BE%D0%B2%D0%B8%D1%87_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%BE.jpg/250px-%D0%86%D0%B2%D0%B0%D0%BD_%D0%AF%D0%BA%D0%BE%D0%B2%D0%B8%D1%87_%D0%A4%D1%80%D0%B0%D0%BD%D0%BA%D0%BE.jpg" // Replace with actual image
