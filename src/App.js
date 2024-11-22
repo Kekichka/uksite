@@ -6,7 +6,7 @@ import Home from './components/Home';
 import AboutAuthors from './components/AboutAuthors';
 import InterestingFacts from './components/InterestingFacts';
 import TestChooser from './components/TestChooser';
-import AboutShevchenko from './components/AboutShevchenko';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +18,7 @@ function App() {
           <Route path="/interesting-facts" element={<InterestingFacts />} />
           <Route path="/tests" element={<TestChooser />} />
         </Routes>
+        <Footer />
       </div>
   );
 }
