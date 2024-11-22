@@ -6,7 +6,7 @@ import Home from './components/Home';
 import AboutAuthors from './components/AboutAuthors';
 import InterestingFacts from './components/InterestingFacts';
 import TestChooser from './components/TestChooser';
-import Taras from './components/Taras';
+import AboutShevchenko from './components/AboutShevchenko';
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
           <Route path="/about-authors" element={<AboutAuthors />} />
           <Route path="/interesting-facts" element={<InterestingFacts />} />
           <Route path="/tests" element={<TestChooser />} />
-          <Route path="/about-authors/taras-shevchenko" component={Taras} />
         </Routes>
       </div>
   );
