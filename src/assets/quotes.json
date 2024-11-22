@@ -13,6 +13,34 @@
       "author": "Леся Українка",
       "photo": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Lesya_Ukrainka_portrait_crop.jpg",
       "quote": "Хто не був високо, той зроду не збагне, як страшно впасти."
-    }
+    },
+    
+      {
+        "author": "Іван Франко",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ivan_Franko_1.jpg/220px-Ivan_Franko_1.jpg",
+        "quote": "Не живи, як інші живуть, а живи, як серце велить."
+      },
+      {
+        "author": "Тарас Шевченко",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Taras_Shevchenko_selfportrait_oil_1840-2.jpg/1200px-Taras_Shevchenko_selfportrait_oil_1840-2.jpg",
+        "quote": "Борітеся – поборете! Вам Бог помагає!"
+      },
+      {
+        "author": "Микола Гоголь",
+        "photo": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Gogol3.jpg",
+        "quote": "Краще бути чесним та бідним, ніж багатим та неправедним."
+      },
+        {
+          "author": "Юрій Андрухович",
+          "photo": "https://libruk.com.ua/wp-content/uploads/andrukhovych-yurii.jpg",
+          "quote": "Ніщо так не рятує людину, як почуття гумору."
+        },
+        {
+          "author": "Остап Вишня",
+          "photo": "https://ukrainian-nation.org.ua/wp-content/uploads/2024/09/Ostap-Vyshnia.jpg",
+          "quote": "Життя без гумору – це просто існування."
+        }
+      
+    
   ]
   
